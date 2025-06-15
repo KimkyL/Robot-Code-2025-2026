@@ -10,13 +10,13 @@
 1. [Descripción General](#descripción-general)
 2. [Arquitectura del Código](#arquitectura-del-código)
 3. [Subsistemas](#subsistemas)
-4. [Comandos](#controles)
-5. [Configuración](#configuración)
-6. [Troubleshooting](#troubleshooting)
+4. [Componentes Del robot](#Componentes-del-Robot)
+5. [Comandos](#controles)
+6. [Configuración](#configuración)
+7. [Troubleshooting](#troubleshooting)
 
 ## Descripción General
-Breve descripción de las funciones principales del robot y su estrategia de juego.
-Nuestro robot, teniendo las carateristicas de: Intake,Elevador, y Neumatica.
+Nuestro robot, teniendo las carateristicas de: Intake,Elevador, y Neumatica. siendo para defensa y recoleccion de algaes durante el juego.
 
 ## Arquitectura del Código
 
@@ -239,7 +239,7 @@ public static final class IntakeCons{
     }
 ```
 
-### Componentes del Robot
+## Componentes del Robot
 
 | Parte         | Modelo                     | CAN ID | Detalles Adicionales       |
 |---------------|----------------------------|--------|-----------------------------|
