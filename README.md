@@ -11,7 +11,7 @@
 2. [Arquitectura del Código](#arquitectura-del-código)
 3. [Subsistemas](#subsistemas)
 4. [Componentes Del robot](#Componentes-del-Robot)
-5. [Comandos](#controles)
+5. [Controles](#controles)
 6. [Configuración](#configuración)
 7. [Troubleshooting](#troubleshooting)
 
