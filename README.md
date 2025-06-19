@@ -1,7 +1,7 @@
 # Documentación del Robot - Raccoons [8741]!
 
 ## Información General
-- **Nombre del Robot:** [La Criatura]
+- **Nombre del Robot:** [Rebellako]
 - **Temporada:** 2025
 - **Juego:** [Reefscape]
 - **Fecha de última actualización:** Junio 2025
