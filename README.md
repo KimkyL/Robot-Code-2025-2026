@@ -363,7 +363,7 @@ Actualemte desactivado, se planea proximamente usar FRC PathPlanner.
 - Restructurado Subsistemas para Intake, Movimiento y Elevador.
 - Añadido la Estructura Command-Based.
 
-### Version 1.3 (Junio 2025)
+### Version 3.0 (Junio-Julio 2025)
 - **Proximamente**
 
 ## Notas para el Equipo
