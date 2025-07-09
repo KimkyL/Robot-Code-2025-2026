@@ -1,0 +1,1 @@
+Emmmm, Todavia no hay auto. lastimosamente no se hacer FRC pathplanning pero voy a ver videos de como hacer el primer pathplanning para empezar completamos la modularizacion del codigo. ya quedo!
