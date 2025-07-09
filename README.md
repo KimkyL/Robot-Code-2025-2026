@@ -23,34 +23,48 @@ Nuestro robot, teniendo las carateristicas de: Intake,Elevador, y Neumatica. sie
 ### Estructura de Carpetas
 ```
 src/
-├── main/
-│   └── java/
-│       └── frc/
-│           └── robot/
-│               ├── Autos/
-│               ├── Subsistemas/
-│               │   ├── ElevadorSub.java
-│               │   ├── IntakeSub.java
-│               │   ├── MovimientoSub.java
-│               │   └── SolenoidSub.java
-│               ├── comandos/
-│               │   ├── ApagarCompressorCom.java
-│               │   ├── EncenderCompressorCom.java
-│               │   ├── ElevadorAbajoCom.java
-│               │   ├── ElevadorArribaCom.java
-│               │   ├── IntakeAgarrarCom.java
-│               │   ├── IntakeSoltarCom.java
-│               │   ├── MovimientoCom.java
-│               │   ├── SolenoideExtenderCom.java
-│               │   ├── SolenoideRetraerCom.java
-│               │   └── SolenoidelnvertirCom.java
-│               ├── Constantes.java
-│               ├── Controles.java
-│               ├── Main.java
-│               └── Robot.java
-│
-├── deploy/
-    └── example.txt
+└── main/
+    └── java/
+        └── frc/
+            └── robot/
+                ├── Auto/
+                │   └── Notaimportante2
+                ├── Config/
+                │   └── ControlesConstantes/
+                │       └── JoystickCons.java
+                ├── Core/
+                │   ├── Controles.java
+                │   ├── Main.java
+                │   └── Robot.java
+                ├── Modulos/
+                │   ├── Elevador/
+                │   │   ├── ElevadorConstantes/
+                │   │   │   └── ElevadorCons.java
+                │   │   ├── ElevadorAbajoCom.java
+                │   │   ├── ElevadorArribaCom.java
+                │   │   └── ElevadorSub.java
+                │   ├── Intake/
+                │   │   ├── IntakeConstantes/
+                │   │   │   └── IntakeConstantes.java
+                │   │   ├── IntakeAgarrarCom.java
+                │   │   ├── IntakeSoltarCom.java
+                │   │   └── IntakeSub.java
+                │   ├── Movimiento/
+                │   │   ├── MovimientoConstantes/
+                │   │   │   └── MovimientoCons.java
+                │   │   ├── MovimientoCom.java
+                │   │   └── MovimientoSubsistema.java
+                │   └── Neumatica/
+                │       ├── Compresor/
+                │       │   ├── ApagarCompresorCom.java
+                │       │   └── EncenderCompresorCom.java
+                │       ├── Solenoid/
+                │       │   ├── SolenoidExtenderCom.java
+                │       │   ├── SolenoidInvertirCom.java
+                │       │   ├── SolenoidRetraerCom.java
+                │       └── SolenoidConstantes/
+                │       │  └── SolenoidCons.java
+                │       └── SolenoidSub.java
 
 ```
 
