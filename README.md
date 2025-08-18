@@ -4,7 +4,7 @@
 - **Nombre del Robot:** [Rebellako]
 - **Temporada:** 2025
 - **Juego:** [Reefscape]
-- **Fecha de última actualización:** Junio 2025
+- **Fecha de última actualización:** Agosto 2025
 
 ## Tabla de Contenidos
 1. [Descripción General](#descripción-general)
@@ -420,4 +420,4 @@ Actualemte desactivado, se planea proximamente usar FRC PathPlanner.
 ## Contacto
 **Programadores principales:** [Angel David Morales Marrufo, Cesar Augusto Ramirez]
 **Mentores de programación:** [Cesar Augusto Ramirez]
-**Última revisión:** [15/06/2025]
+**Última revisión:** [18/08/2025]
