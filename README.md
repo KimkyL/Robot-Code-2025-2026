@@ -16,7 +16,7 @@
 7. [Troubleshooting](#troubleshooting)
 
 ## Descripción General
-Nuestro robot, teniendo las carateristicas de: Intake,Elevador, y Neumatica. siendo para defensa y recoleccion de algaes durante el juego.
+Nuestro robot, teniendo las carateristicas de: Intake,Elevador, y Neumatica. Siendo para defensa y recoleccion de Algaes durante el juego.
 
 ## Arquitectura del Código
 
@@ -332,7 +332,7 @@ public static final class IntakeCons{
 **Posibles causas:**
 - Motor desconectado (verificar CAN Bus)
 - Cables quemados/Puenteados Accidentalmente.
-- Código no deployado correctamente
+- Código no cargado correctamente
 
 **Solución:**
 1. Verificar conexiones físicas
@@ -350,9 +350,35 @@ public static final class IntakeCons{
 2. Ajustar constantes de velocidad
 3. Revisar mecanismo por obstrucciones
 
+### Problemas Solenoide y Compresor
+
+#### El compresor no funciona
+
+**Posibles causas:**
+-Cables no conectados correctamente al PCM
+-Switch de presion no conectada correctamente al sistema PCM (Pneumatics Control Module)
+-Error en el codigo (HalError)
+
+**Solución:**
+1. Verificar las conexiones si llega de Roborio a PDP
+2. Temporalmente puentear el sistema de presion para verificar que el compressor funcione correctamente
+3. Revisar detalladamente si el codigo no tiene Duplicado en el alguno de los CAN's
+
+#### El solenoide no funciona o no abre las valvulas
+
+**Posibles causas:**
+-Cables no conectados correctamente en el identificador del codigo (1,7) en el PCM
+-Error en la configuracion del codigo
+
+**Solucion:**
+1. Verficar si tanto en el codigo como en la conexion fisica esten conectados al Identificador correspondiente en el codigo
+2. Revisar si el codigo no tenga algun identificador duplicado.
+
 
 ### Autónomo
 Actualemte desactivado, se planea proximamente usar FRC PathPlanner.
+**Nota**
+- Es posible que usemos un autonomo muy basico.
 
 ## Historial de Cambios
 
@@ -372,18 +398,24 @@ Actualemte desactivado, se planea proximamente usar FRC PathPlanner.
 - Cambio de Hibrid Structure a Command-Based dejando Obsoleto Hibird Structure with No commands.
 - Arreglos en MovimientoSub.java Por que el Can Id 3 copiaba al 1 en lugar del 4
 - Cambio de Nombre de Aire.java -> SolenoidSub.java 
-- Arreglado problema en Solenoid.java. Que salia HalError por poner un numero que no sea 0 al PCM.
+- Arreglado problema en Solenoid.java, que salia HalError por poner un numero que no sea 0 al PCM.
 - Removido Autonomo, Para posteriormente en proximas versiones ser remplazado por Path-Planning.
 - Restructurado Subsistemas para Intake, Movimiento y Elevador.
 - Añadido la Estructura Command-Based.
 
-### Version 3.0 (Junio-Julio 2025)
-- **Proximamente**
+### Version 3.0 (Junio-Agosto 2025)
+- Cambio de Command-Based a una version mas modularizada para, rapidez de depuracion de codigo.
+- Añadido (Modulos -> Movimiento -> Elevador -> Solenoide -> Garra)
+- Arreglo al Compressor del HalError
+  Nota: El problema no era el PCM si no el Compressor ya que este estaba en 0 Aunque no tenga identificador.
 
 ## Notas para el Equipo
 - Testear por individual el codigo y entender y comprender su estructura
 - Documentar cualquier cambio en este archivo
 - Realizar backup del código antes de modificaciones importantes
+**Proximamente**
+- Codigos Antiguos estaran subidos por separado de cada version en Google Drive
+- Existira una Version unicamente en ingles (primeramente mejorar ortografia en la version de español)
 
 ## Contacto
 **Programadores principales:** [Angel David Morales Marrufo, Cesar Augusto Ramirez]
