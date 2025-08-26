@@ -409,6 +409,13 @@ Actualemte desactivado, se planea proximamente usar FRC PathPlanner.
 - Arreglo al Compressor del HalError
   Nota: El problema no era el PCM si no el Compressor ya que este estaba en 0 Aunque no tenga identificador.
 
+### Version 3.01 (Agosto-Septiembre 2025)
+- Se ha removido de los progamadores principales a Angel David Morales Marrufo por cuestiones tecnicas.
+- Antes de la version final se espera tener un sistema completamente funcional.
+- Proximamente!
+
+
+
 ## Notas para el Equipo
 - Testear por individual el codigo y entender y comprender su estructura
 - Documentar cualquier cambio en este archivo
@@ -418,6 +425,6 @@ Actualemte desactivado, se planea proximamente usar FRC PathPlanner.
 - Existira una Version unicamente en ingles (primeramente mejorar ortografia en la version de español)
 
 ## Contacto
-**Programadores principales:** [Angel David Morales Marrufo, Cesar Augusto Ramirez]
+**Programadores principales:** [Cesar Augusto Ramirez]
 **Mentores de programación:** [Cesar Augusto Ramirez]
 **Última revisión:** [18/08/2025]
